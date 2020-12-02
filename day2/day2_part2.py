@@ -10,9 +10,7 @@ def check_passwords(pwd_list):
         rule, password = [x.strip() for x in line.split(':')]
         positions, letter = rule.split()
         pos_one, pos_two = [int(x)-1 for x in positions.split('-')]
-        if (password[pos_one] == letter) and (password[pos_two] != letter):
-            counter = counter + 1
-        elif (password[pos_one] != letter) and (password[pos_two] == letter):
+        if (password[pos_one] == letter) != (password[pos_two] == letter):
             counter = counter + 1
     return counter
 
