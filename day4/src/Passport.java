@@ -28,4 +28,18 @@ public class Passport {
         this.ecl = ecl;
         this.pid = pid;
     }
+
+    @Override
+    public String toString() {
+        return "Passport{" +
+                "byr='" + byr + '\'' +
+                ", iyr='" + iyr + '\'' +
+                ", eyr='" + eyr + '\'' +
+                ", hgt='" + hgt + '\'' +
+                ", hcl='" + hcl + '\'' +
+                ", ecl='" + ecl + '\'' +
+                ", pid='" + pid + '\'' +
+                ", cid='" + cid + '\'' +
+                '}';
+    }
 }

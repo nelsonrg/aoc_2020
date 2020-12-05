@@ -6,5 +6,8 @@ public class day4 {
         String inputFile = "input.txt";
         ArrayList<Passport> passportList = PassportFactory.loadPassports(inputFile);
         System.out.println("Valid passports: " + passportList.size());
+        for (Passport passport: passportList) {
+            System.out.println(passport.toString());
+        }
     }
 }
