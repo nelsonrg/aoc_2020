@@ -40,4 +40,4 @@ def calculate_missing_seat(line_list):
         
 if __name__ == "__main__":
     input = read_file("input.txt")
-    print(calculate_missing_seat(input))
+    print(calculate_missing_seat(input).pop())
